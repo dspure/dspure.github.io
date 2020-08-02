@@ -76,7 +76,7 @@
         
   
     <h1 class="entry-title">
-      <a class="article-title" href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+github配置</a>
+      <a class="article-title" href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+gitpage配置服务器</a>
     </h1>
   
 
@@ -151,11 +151,12 @@
 </ul>
 <p>修改 <code>_config.yml</code> 文件</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">material</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>生成<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line">````</span><br><span class="line">- 发布</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
 
-</li>
+<ul>
+<li>生成</li>
 </ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">- 发布</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><ul>
 <li>创建文档<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;主题名&quot;</span><br></pre></td></tr></table></figure>
 
@@ -167,7 +168,7 @@
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><pre><code>总的来说还是挺简单的，期间遇到了不少问题，其中 `curl`更新git源，`npm`的使用需要加强，准备看看git大神廖雪峰的相关书籍。</code></pre>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>总的来说还是挺简单的，期间遇到了不少问题，其中 <code>curl</code>更新git源，<code>npm</code>的使用需要加强，准备看看git大神廖雪峰的相关书籍。</p>
 
       
     </div><!-- .entry-content -->
@@ -181,7 +182,1176 @@
     
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-gitblog-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">hexo gitblog 学习笔记</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-20200723代码配置" class="post-20200723代码配置 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">代码配置</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/" data-id="ckdcx4mxz0000gie53nz59o07" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h2 id="20200723"><a href="#20200723" class="headerlink" title="20200723"></a>20200723</h2><p>NC 、 LDAP 、 邮箱 激活</p>
+<h2 id="一、工作环境配置"><a href="#一、工作环境配置" class="headerlink" title="一、工作环境配置"></a>一、工作环境配置</h2><ul>
+<li><p>常用工具安装</p>
+</li>
+<li><p>virtualbox 、chrome</p>
+</li>
+<li><p>markdown编辑器</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://typora.io/#linux">https://typora.io/#linux</a></li>
+</ul>
+</li>
+<li><p><img src="/home/ts/%E5%9B%BE%E7%89%87/%E9%80%89%E5%8C%BA_002.png" alt="选区_002"></p>
+</li>
+<li><p>shutcut tool</p>
+<ul>
+<li><p>shutter</p>
+</li>
+<li><p>快捷键设置：<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/4b52d702db5482fc5c774bf0.html">https://jingyan.baidu.com/article/4b52d702db5482fc5c774bf0.html</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><p>git设置名字和邮箱</p>
+</li>
+<li><p>配置java8</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openjdk-8-jdk</span><br><span class="line">sudo apt-get install openjdk-8-jre</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>下载repo，添加到PATH</li>
+</ol>
+<ul>
+<li><p>git clone <a target="_blank" rel="noopener" href="https://aosp.tuna.tsinghua.edu.cn/git-repo/">https://aosp.tuna.tsinghua.edu.cn/git-repo/</a></p>
+</li>
+<li><p>修改 /etc/profile 或者 /home/ts/.bashrc 添加 export PATH=”$PATH:repo执行文件所在目录”</p>
+</li>
+<li><p>修改~/git-repo/repo将REPO_URL替换为清华镜像地址，以避免下载android源码时可能出现的无法连接到 gerrit.googlesource.com问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">REPO_URL &#x3D; &#39;https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;git&#x2F;git-repo&#39;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="3">
+<li><p>ssh-keygen -t rsa -C “email” 生成密钥</p>
+</li>
+<li><p>gerrit 添加公钥</p>
+</li>
+</ol>
+<h2 id="二、代码同步"><a href="#二、代码同步" class="headerlink" title="二、代码同步"></a>二、代码同步</h2><p><code>一般公司会给代码同步地址</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一般步骤：</span><br><span class="line">1. 修改~&#x2F;.gitconfig</span><br><span class="line">2. 使用repo和git同步</span><br></pre></td></tr></table></figure>
+
+<p>repo init -u 代码地址</p>
+<h2 id="三、代码编译"><a href="#三、代码编译" class="headerlink" title="三、代码编译"></a>三、代码编译</h2><ul>
+<li><pre><code>常用编译方式：
+1. AP编译
+2. BP编译
+3. 整编（AP + BP 但是要将AP代码放到BP 目录名字要跟脚本相同
+4. 编译单个模块
+&lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- **将AP代码放在BP里面才能整编**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+在BP代码目录创建 LINUX/android 目录将AP代码直接放在里面，不加任何目录
+&lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;- **拷贝BP的AP编译脚本到AP资源目录**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dailybuild,将该文件夹    复制        到LINUX/andriod目录下面
+&lt;!--hexoPostRenderEscape:&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- AP编译&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 复制编译脚本到AP ，脚本在BP目录下&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 执行AP编译脚本，编译整个系统的脚本（在BP代码的buildscrip目录下build_system_CM.sh ）会调用AP编译脚本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - **生成的可执行文件在什么地方？**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - ***脚本能看懂，能写？***&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- BP编译&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  - 编译bp发现没有权限更改目录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - 使用了sudo执行过脚本，因此编译权限出现问题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    - &amp;#96;&amp;#96;&amp;#96;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      使用sudo chown 将目录下的所有文件的所有者更改为普通用户&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      对 &amp;#x2F;opt&amp;#x2F;oracle&amp;#x2F;  目录下的所有文件与子目录执行相同的所有者变更，使所有者修改为oinstall用户组的oracle用户&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      chown -R oracle:oinstall &amp;#x2F;opt&amp;#x2F;oracle&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;:hexoPostRenderEscape--&gt;
+
+</code></pre>
+</li>
+</ul>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/" rel="tag">android</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-20200726配置win10文件网络共享方法" class="post-20200726配置win10文件网络共享方法 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/">配置win10共享文件 实现win-win win-linux 共享文件</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/" data-id="ckdcx4my40001gie5acwfbv37" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="配置win10共享文件-实现win-win-win-linux-共享文件"><a href="#配置win10共享文件-实现win-win-win-linux-共享文件" class="headerlink" title="配置win10共享文件 实现win-win win-linux 共享文件"></a>配置win10共享文件 实现win-win win-linux 共享文件</h1><h2 id="一、A端-win10配置"><a href="#一、A端-win10配置" class="headerlink" title="一、A端 win10配置"></a>一、A端 win10配置</h2><ol>
+<li><strong>将你要共享的文件夹共享给everyone</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">右击要共享的文件夹-》共享-》特定账户-》点击下拉按钮-》Everyone-》添加-》（如果想要添加写入权限，则再去）点击Everyone那行的权限级别，从 读取 改为：读取&#x2F;写入-》确定</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>开启guest来宾账户</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">右击win10左下角Windows的图标-》计算机管理-》计算机管理（本地）-》系统工具-》本地用户和组-》用户-》双击Guest-》取消勾选：账户已禁用-》确定</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>允许guest账户从网络访问当前电脑</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">控制面板-》查看方式，改为：大图标-》管理工具-》本地安全策略-》安全设置-》本地策略-》用户权限分配-》双击 拒绝从网络访问这台计算机（默认可以看到安全设置的值中包含了guest）-》选中 Guest-》删除-》确定</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、B端-win10配置"><a href="#二、B端-win10配置" class="headerlink" title="二、B端 win10配置"></a>二、B端 win10配置</h2><ol>
+<li><strong>开启网络发现和文件共享</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">资源管理器-》网络-》网络发现和文件共享已关闭。看不到网络计算机和设备。单击以更改。。。-》启用网络发现和文件共享-》稍等片刻，即可看到共享出来的Win10系统的计算机名-》</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>找到共享的win10电脑，双击后，用户名为guest密码留空不用输入去登录</strong></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">双击该计算机名-》在弹出的 输入网络凭据 窗口中：</span><br><span class="line">用户名：guest</span><br><span class="line">密码：留空不填</span><br><span class="line">-》即可登录进去，看到对应的共享出来的文件夹-》可以拷贝里面的文件了和（如果对方启用了写入权限）粘贴文件进去了。</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、C端-linux配置"><a href="#三、C端-linux配置" class="headerlink" title="三、C端 linux配置"></a>三、C端 linux配置</h2><p><em>注：可以直接monut 这里使用smba客户端</em></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install smbclient</span><br><span class="line">mkdir windows</span><br><span class="line">smbclient  -C &quot;ls&quot; //172.18.25.251/share  -U shareaccount%thundersoft </span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/fe5934fdad54">https://www.jianshu.com/p/fe5934fdad54</a></p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E9%A1%B9/" rel="tag">杂项</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-C++知识盲区" class="post-C++知识盲区 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">C++扫盲</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/" data-id="ckdcx4my80003gie58co85buc" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <ol>
+<li>虚基类特点：基类被虚继承，无论在继承链中派生多少次，只有一个基类</li>
+<li>虚继承</li>
+<li>虚函数、虚析构函数指针在虚函数表中</li>
+<li>在继承中class继承struct？或者struct继承class？合法吗？C++早期版本，不报错，但觉得不建议</li>
+<li>template &lt; class Type &gt; 与 template &lt; struct Type &gt; 编译器报错吗？ C++3.0都不报错，不推荐</li>
+<li>public、protected、private数据内存分布？ 按声明顺序分布，变量顺序编译器决定</li>
+<li>将类中的很多数据传入C函数做法？ 数据封装为结构体，与类组合  子类继承结构体可行吗？ 新版编译器对继承布局做了调整，不建议</li>
+<li>各种继承都支持多态吗？</li>
+<li>访问类成员分类？ 类内部访问、子类访问、外部内访问</li>
+<li>三种属性区别？ public三种都可访问 proteated外部不允许访问 private只允许内部访问</li>
+<li>C++编程范式？ 程序、模板、面向对象</li>
+<li>多态实现原理？ 虚函数表</li>
+<li>多态发生条件？ 继承 虚函数重写 父类调用子类资源 </li>
+<li>多态发生地点？ 发生了虚函数重写，继承，父类指使用子类资源</li>
+<li>父类指针指向子类时，调用重写函数调用的是谁得函数？ 编译器识别父类指针，确定指针指向得空间大小为父类空间大小，指向了子类得父类资源，即子类得部分内存，所以调用的是父类得函数，而不是子类资源</li>
+<li>父类指针static_cast/dynamic_cast转换为子类指针,调用重写函数，调用的是谁的？利用了什么机制？这两种转换方式有什么区别？     编译器根据指针类型认为转换后得指针是子类指针，使用子类全部内存，调子类重写得函数。利用了virtual机制。static_cast编译时就转换完成，dynamic——cast执行时转换，资源消耗较静态转换大。</li>
+<li>virtual机制使用时是否发生了多态？ 没有，多态得实现使用的是虚函数表，利用了vptr指针，儿虚机制使用的是编译器根据指针类型决定内存的原理</li>
+<li>各种变量得指针大小是多少？ 指针得大小与系统有关，32为系统4byte 64为系统8byte，任何变量都是大小固定的</li>
+<li>类指针调用函数、类调用函数区别？ C++早期，指针调用使用虚函数表地址调用 类调用直接调用</li>
+<li>表现一个类需要多大内存？ 非静态data成员总和 + 不够字节的data成员剩余空间 + 为virtual机制实现负担空间</li>
+<li>多态中编译器如何知道自己需要解析的指针指向类的空间？ 根据指针类型</li>
+<li>不适用virtual机制，子类指针使用父类初始化，可直接访问父类资源吗？ 不能，只能通过虚机制访问</li>
+<li>OB OO理解？ OB object base 不使用virtual机制 OO：使用virtual机制</li>
+<li>使用. -&gt;访问成员资源消耗差异？ 访问data成员由虚基类继承差异大</li>
+<li>需要关注类型，直接继承，不关注类型，使用多态</li>
+<li>静态成员函数访问非静态成员？ 不直接支持</li>
+<li><strong><strong>静态成员函数与成员函数调用效率？为什么？ 相同 调用时编译器将静态的转换为非静态的，减小运行时间空间消耗， 非静态的成员函数会被转换为非成员函数</strong></strong></li>
+<li>函数重载、虚函数重写如何编译？ 词法语法分析，根据特征为memberfunction改独一无二的名字</li>
+<li>虚函数表基本信息？ 类型信息 虚函数指针</li>
+<li>编译器编译时如何构建虚函数表，虚函数指针个数相同吗，多重继承呢？ 给每个虚函数留一个索引，表内装地址 个数相同 多重继承的类有多个表，对应父类，虚继承来的类只有一个表 </li>
+<li>虚函数编译时确定函数，虚函数指针能否实现多态，为什么？ 能 不同编译器实现机制不同，一种机制是将指针转换为结构体指针，结构体同时保存成员函数指针和虚函数指针，编译时判断类型</li>
+<li>默认构造函数在什么时候被编译器合成？ 编译器认为在构造函数被需要的时候才会被合成</li>
+<li>如果编译器没有构造函数，则合成构造函数，如果有则扩张该函数，放入默认构造函数需要的代码</li>
+<li>编译器合成的默认构造函数只负责调用自身组合的类的默认构造函数</li>
+<li>父类和成的默认构造函数会被子类默认构造函数调用</li>
+<li>浅拷贝 深拷贝</li>
+<li>使用函数内部的对象做返回值，返回的对象会不会被销毁？返回会不会调用拷贝构造函数？ 编译器会将函数重写，将内部返回的对象作为该函数引用参数传入，所以不会被析构。像这样的改写就不会调用拷贝构造，因此拷贝构造调用编译器而定，优化的越厉害调用可能性越小</li>
+<li>拷贝传参会让编译器对函数做深奥的转化，效率明显没有引用高</li>
+<li>构造函数使用快速初始化语法 A（int x）:i(x){y = i} i = x和 y = i谁先执行？ i=x先执行</li>
+<li>空类有大小吗？ 有通常一个char大小，1 byte 为什么？ 为多个类对象定义独一无二的地址 虚继承的类的大小？非虚继承继承的呢？ 根据机器，编译器而定，为了vitual某些特殊支持</li>
+<li>空类继承大小与编译器有关，非空类基层呢？ 无关</li>
+<li>类的内存对齐？ 为每个类执行内存对齐，特别注意继承链上的也是为每个类执行内存对齐</li>
+<li>虚函数多重继承，内部vptr表？ 早期方案 1.子类多表合一，通过vptr+offset存取 2子类内存布局特点，this+offset实现</li>
+<li>指向成员函数的指针，不是用virtual 多重继承时效率与直接存取差不多</li>
+<li><strong><strong>————构造析构拷贝语义学——————-</strong></strong></li>
+<li>纯虚析构函数？是否能被调用？ 能，纯虚析构函数要有其实现体，不然在子类析构时无法调用父类析构函数，因此 需要在纯虚析构函数类外加上析构函数体 Base::~Base(){};</li>
+<li>析构函数是否能被显式调用？ 能，不建议</li>
+<li>virtual会降低执行效率，不使用多态不建议使用</li>
+<li>使用extren “C” 原因？ C++支持函数重载，C++编译器更改某些函数的名字更与C编译器不同</li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-Linux系统编程" class="post-Linux系统编程 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">Linuxϵͳ���</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" data-id="ckdcx4my90004gie5dipe2bcf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="linuxϵͳ���"><a href="#linuxϵͳ���" class="headerlink" title="linuxϵͳ���"></a>linuxϵͳ���</h1><h2 id="����"><a href="#����" class="headerlink" title="����"></a><strong>����</strong></h2><h3 id="һ�����̿���"><a href="#һ�����̿���" class="headerlink" title="һ�����̿���"></a><strong><em>һ�����̿���</em></strong></h3><h4 id="1������"><a href="#1������" class="headerlink" title="1������"></a>1������</h4><ul>
+<li><p>���˽⣩MMU �ڴ�-&gt;Ԥ��ȡ-&gt;������-&gt;ALU�������߼���Ԫ��-��д����-&gt;�Ĵ���</p>
+</li>
+<li><p>���̿��ƿ� PCB</p>
+<ul>
+<li>��������һ����Ž�����Ϣ�ṹ��</li>
+<li>grep -rn “struct task_struct {“ /usr/src</li>
+</ul>
+</li>
+<li><p>����ִ����Դ����</p>
+<ul>
+<li>ulimit -a</li>
+</ul>
+</li>
+<li><p>(�˽�)��������</p>
+<ul>
+<li>�鿴<ul>
+<li>env</li>
+</ul>
+</li>
+<li>���λ��<ul>
+<li>/etc/.bashrc</li>
+</ul>
+</li>
+<li>���ӻ�������<ul>
+<li>ͨ������</li>
+<li>�޸�.bashrc <ul>
+<li>export key=val</li>
+<li>ˢ�� source</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>���̹�������</p>
+<ul>
+<li>�鿴����<ul>
+<li>ps -aux</li>
+<li>ps -ajx</li>
+<li>top</li>
+</ul>
+</li>
+<li>�����ź�<ul>
+<li>�鿴�ź�<ul>
+<li>kill -l</li>
+</ul>
+</li>
+<li>ɱ������<ul>
+<li>kill -9 xxx</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ctrl + Z ��ͣ���̣�����SIGSTOP�źţ�</li>
+<li>ctrl + C ֹͣ���̣�����SIGKILL�źţ�</li>
+<li>jobs �鿴��ͣ����</li>
+<li>fg id<ul>
+<li>id jods��ʶ��id��<h4 id="2������"><a href="#2������" class="headerlink" title="2������"></a>2������</h4></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>�¶�����</p>
+<ul>
+<li>�����̱��ӽ����Ƚ�������init�����������ϵ�Ӣ������</li>
+</ul>
+</li>
+<li><p>��ʬ����</p>
+<ul>
+<li>������Ĭ�ϲ����ӽ�����Դ����</li>
+<li>������û�л����ӽ�����Դ�����½�ʬ����</li>
+</ul>
+</li>
+<li><p>�ӿ�</p>
+<ul>
+<li><p>�ֲ�</p>
+<ul>
+<li>pid_t fork(void);<ul>
+<li>���η���</li>
+<li>-1ʧ��</li>
+<li>0 �ӽ���</li>
+<li>&gt;0 ������</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>pid_t getpid(void);</p>
+</li>
+<li><p>pid_t getppid(void);</p>
+</li>
+<li><p>ִ��ʱ������������</p>
+<ul>
+<li><p>system������������</p>
+</li>
+<li><p>exec���������</p>
+<ul>
+<li><p>int execl(const char *path, const char <em>arg, … /</em> (char  *) NULL */);</p>
+<ul>
+<li>ִ�в����û�������</li>
+<li><strong><strong>����Ҫ�жϷ���ֵ</strong></strong><ul>
+<li>ʾ��<ul>
+<li>execl(“ls”,”ls”,”-l”,null);</li>
+<li>perror(“err”);</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>int execlp(const char *file, const char *arg, …</p>
+<pre><code>         /* (char  *) NULL */);</code></pre>
+<ul>
+<li>ִ�е��û�������</li>
+<li>file �ļ�</li>
+<li>arg ����</li>
+<li>��null���� ���ڱ�����</li>
+<li><strong><strong>����Ҫ�жϷ���ֵ</strong></strong></li>
+</ul>
+</li>
+<li><p>int execle(const char *path, const char *arg, …</p>
+<pre><code>         /*, (char *) NULL, char * const envp[] */);</code></pre>
+</li>
+<li><p>int execv(const char *path, char *const argv[]);</p>
+</li>
+<li><p>int execvp(const char *file, char *const argv[]);</p>
+</li>
+<li><p>int execvpe(const char *file, char *const argv[],</p>
+<pre><code>         char *const envp[]);</code></pre>
+</li>
+<li><p>ԭ��</p>
+<ul>
+<li>�滻�̣߳�ִ���Լ����룬������Ϣ���䣬ԭ������exec��Ĳ���ִ��</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>�ӽ�����Դ����</p>
+<ul>
+<li><p>wai������</p>
+<ul>
+<li><p>pid_t wait(int *status);</p>
+<ul>
+<li>status ��������</li>
+<li>Ĭ������</li>
+</ul>
+</li>
+<li><p>pid_t waitpid(pid_t pid, int *status, int options);</p>
+<ul>
+<li>opetions<ul>
+<li>0 ����</li>
+<li>WNOHANG ������</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>int waitid(idtype_t idtype, id_t id, siginfo_t *infop, int options);</p>
+<ul>
+<li>/* This is the glibc and POSIX interface; see NOTES for information on the raw system call. */</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>�����ȴ�</li>
+<li>�����ӽ�����Դ</li>
+<li>�鿴����ԭ��<ul>
+<li>man wait �����꺯�� ����status</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>���ն���ӽ���<ul>
+<li>wait()ѭ�� ���Ƽ�</li>
+<li>waitpid ����<ul>
+<li>while(1)</li>
+<li>{<ul>
+<li>pid_t wpid = waitpid(-1,NULL,WNOHANG);</li>
+<li>if(wpid = -1)break;</li>
+</ul>
+</li>
+<li>}</li>
+<li>-1��ʾ�ӽ��̶�����</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>���ӽ��̹�ϵ</p>
+<ul>
+<li>�ӽ���ʱ�����̵Ŀ���</li>
+<li>���ݶ�ʱ������дʱ����</li>
+<li>pid��ͬ ����ʱ�䲻ͬ</li>
+<li>���ӽ��̲�����ȫ�ֱ���</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>ѭ������n�����̣�fork���η��أ����и����̻����ӽ���ʹ��break<h3 id="�������̼�ͨ��IPC"><a href="#�������̼�ͨ��IPC" class="headerlink" title="�������̼�ͨ��IPC"></a><strong><em>�������̼�ͨ��IPC</em></strong></h3></li>
+</ul>
+</li>
+<li><p>�ں��ṩ������������ͨ��������ͨ��</p>
+</li>
+<li><p>����</p>
+<ul>
+<li>�ܵ����򵥣�ѪԵ����ͨ�ţ�</li>
+<li>�źţ�����С��</li>
+<li>�ڴ�ӳ�䣨��ѪԵ��ϵͨ�ţ�</li>
+<li>����socket<h4 id="1���ܵ�"><a href="#1���ܵ�" class="headerlink" title="1���ܵ�"></a>1���ܵ�</h4></li>
+<li>�ص�</li>
+</ul>
+</li>
+<li><p>�����ں˻�����ʵ��</p>
+</li>
+<li><p>ͨ�ŷ�����</p>
+</li>
+<li><p>һ���������ݣ��޷��ٴζ�</p>
+</li>
+<li><p>�ܵ�������ʱ���ܵ�û������ʹ��read������</p>
+</li>
+<li><p>�ܵ�������write����</p>
+</li>
+<li><p>�ܵ�����ȫ���رգ������쳣��ֹ</p>
+<ul>
+<li>�鿴</li>
+</ul>
+</li>
+<li><p>ulimit -a/-p</p>
+</li>
+<li><p>long fpathconf(int fd, int name);</p>
+<h5 id="��1�������ܵ�"><a href="#��1�������ܵ�" class="headerlink" title="��1�������ܵ�"></a>��1�������ܵ�</h5><ul>
+<li>int pipe(int pipefd[2])��</li>
+</ul>
+</li>
+<li><p>pipefd[0] ������</p>
+</li>
+<li><p>Pipefd[1] д������</p>
+<h5 id="��2��FIFO-�����ܵ�"><a href="#��2��FIFO-�����ܵ�" class="headerlink" title="��2��FIFO �����ܵ�"></a>��2��FIFO �����ܵ�</h5><ul>
+<li>mkfifo pipename</li>
+<li>int mkfifo(const char *pathname, mode_t mode);<h4 id="2���ڴ�����"><a href="#2���ڴ�����" class="headerlink" title="2���ڴ�����"></a>2���ڴ�����</h4></li>
+<li>����</li>
+</ul>
+</li>
+<li><p>void *mmap(void *addr, size_t length, int prot, int flags,int fd, off_t offset);</p>
+<ul>
+<li>addr:null</li>
+<li>length:map size</li>
+<li>prot: Ȩ�� ROT_READ��PROT_WRITE��PROT_READ|PROT_WRITE</li>
+<li>flags: <ul>
+<li>MAP_SHARED:  �Ὣӳ���������Ĳ�����ӳ�������豸�����̣��ϡ� ��ѪԵ��ϵ����ͨ�ţ�</li>
+<li>MAP_PRIVATE: ӳ�����������޸Ĳ��ᷴӳ�������豸��</li>
+<li>MAP_ANONYMOUS:����ӳ��</li>
+</ul>
+</li>
+<li>fd:�ļ�������</li>
+<li>offset�� ӳ���ļ���ƫ�ƣ��ڴ�ҳ����������4K</li>
+<li>����ֵ��<ul>
+<li>MAP_FAILED ʧ��</li>
+</ul>
+</li>
+<li>�ͷ�</li>
+</ul>
+</li>
+<li><p>int munmap(void *addr, size_t length);</p>
+<h3 id="�����ػ�����"><a href="#�����ػ�����" class="headerlink" title="�����ػ�����"></a><strong><em>�����ػ�����</em></strong></h3><ul>
+<li>ԭ���������Ͼ�����һ���¶����̣���init���̹�����**<strong>�����ն˿���**</strong></li>
+<li>1��setsid() //�������������ӽ����´���һ��session��**<strong>�����ն˿���**</strong></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>2��chdir���� //�л�����Ŀ¼������ռ�ÿ�ж���ļ�ϵͳ</p>
+</li>
+<li><p>3��umask() //�޸ĳ����ļ�Ȩ��</p>
+</li>
+<li><p>4���ر��ļ������� //����ռ��</p>
+</li>
+<li><p>5���˳�����</p>
+</li>
+</ul>
+<h3 id="�g�����ͬ��"><a href="#�g�����ͬ��" class="headerlink" title="�ġ�����ͬ��"></a><strong><em>�ġ�����ͬ��</em></strong></h3><ul>
+<li><ol>
+<li>�ź���</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><ol start="2">
+<li>������<h2 id="�z�"><a href="#�z�" class="headerlink" title="�ź�"></a><strong>�ź�</strong></h2></li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>�鿴</p>
+<ul>
+<li>kill -l</li>
+<li>man signal</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li><p>int kill(pid_t pid, int sig); //���������̷����ź�</p>
+</li>
+<li><p>int raise(int sig); //���Լ����ź�</p>
+</li>
+<li><p>void abort(void); //���Լ����쳣SIGABRT</p>
+</li>
+<li><p>unsigned int alarm(unsigned int seconds); //ʱ���ź�SIGALRM</p>
+</li>
+<li><p>int setitimer(int which, const struct itimerval *new_value,</p>
+<pre><code>               struct itimerval *old_value);</code></pre>
+</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>��ͼ</li>
+</ul>
+</li>
+</ul>
+<h2 id="�߳�"><a href="#�߳�" class="headerlink" title="�߳�"></a><strong>�߳�</strong></h2><h3 id="һ������"><a href="#һ������" class="headerlink" title="һ������"></a><strong><em>һ������</em></strong></h3><ul>
+<li><p>ÿ���̶߳���һ��errnumber,ʹ��perror() ������</p>
+<ul>
+<li><p>ʹ�� strerror()</p>
+<ul>
+<li><p>char *strerror(int errnum);</p>
+</li>
+<li><p>int strerror_r(int errnum, char *buf, size_t buflen);</p>
+<pre><code>         /* XSI-compliant */</code></pre>
+</li>
+<li><p>char *strerror_r(int errnum, char *buf, size_t buflen);</p>
+<pre><code>         /* GNU-specific */</code></pre>
+</li>
+<li><p>char *strerror_l(int errnum, locale_t locale);</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>�ص�</p>
+<ul>
+<li>�߲���������С</li>
+<li>linux�����߳�ʵ�ַ�ʽʹ�߳̽������ܲ�𲻴�</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>int pthread_create(pthread_t *thread, const pthread_attr_t *attr,<pre><code>                  void *(*start_routine) (void *), void *arg);</code></pre>
+</li>
+</ul>
+</li>
+<li><p>�鿴id </p>
+<ul>
+<li>pthread_t pthread_self(void);</li>
+</ul>
+</li>
+<li><p>�˳�</p>
+<ol>
+<li>ֱ��return��ʽ�˳�</li>
+<li>void pthread_exit(void *retval);<ul>
+<li>��ʾ�˳��̣߳�retvalֵ�����ص�pthread_join�ڶ�������</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>�̻߳���</p>
+<ul>
+<li>int pthread_join(pthread_t thread, void **retval);<ul>
+<li>�����ȴ�</li>
+<li>thread �ȴ��߳�id</li>
+<li>retval �߳��˳�ֵ��ʹ��strerror(setval)�õ�����ֵ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ɱ���߳�</p>
+<ul>
+<li><p>int pthread_cancel(pthread_t thread);</p>
+<ul>
+<li>ʹ�øú���ɱ�����̣߳�ʹ��pthread_join���յķ���ֵΪ”-1”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>���˽⣩�ж��Ƿ�ʹͬһ���߳�</p>
+<ul>
+<li>int pthread_equal(pthread_t t1, pthread_t t2);</li>
+</ul>
+</li>
+<li><p>�߳�����</p>
+<ul>
+<li><p>��ͼ</p>
+</li>
+<li><p>int pthread_attr_init(pthread_attr_t *attr);</p>
+</li>
+<li><p>int pthread_attr_destroy(pthread_attr_t *attr);</p>
+</li>
+<li><p>int pthread_attr_setdetachstate(pthread_attr_t *attr, int detachstate);</p>
+</li>
+<li><p>int pthread_attr_getdetachstate(const pthread_attr_t *attr, int *detachstate);</p>
+</li>
+</ul>
+</li>
+<li><p>�̷߳���</p>
+<ol>
+<li>int pthread_detach(pthread_t thread);<ul>
+<li>�̷߳������Ҫʹ��pthread_join������Դ</li>
+</ul>
+</li>
+<li>ͨ���߳���������<h3 id="�����߳�ͬ��"><a href="#�����߳�ͬ��" class="headerlink" title="�����߳�ͬ��"></a><strong><em>�����߳�ͬ��</em></strong></h3><h4 id="������"><a href="#������" class="headerlink" title="������"></a>������</h4></li>
+</ol>
+</li>
+<li><p>ȫ��</p>
+<ul>
+<li><p>pthread_mutex_t fastmutex = PTHREAD_MUTEX_INITIALIZER;</p>
+</li>
+<li><p>pthread_mutex_t recmutex = PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP;</p>
+</li>
+<li><p>pthread_mutex_t errchkmutex = PTHREAD_ERRORCHECK_MUTEX_INITIALIZER_NP;</p>
+</li>
+</ul>
+</li>
+<li><p>�Զ���</p>
+<ul>
+<li><p>int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *mutexattr);</p>
+</li>
+<li><p>int pthread_mutex_lock(pthread_mutex_t *mutex);</p>
+</li>
+<li><p>int pthread_mutex_trylock(pthread_mutex_t *mutex);</p>
+</li>
+<li><p>int pthread_mutex_unlock(pthread_mutex_t *mutex);</p>
+</li>
+<li><p>int pthread_mutex_destroy(pthread_mutex_t *mutex);</p>
+</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>�������� <ul>
+<li>����� �ͷŵ�ǰ��<h4 id="��д��"><a href="#��д��" class="headerlink" title="��д��"></a>��д��</h4></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>��д�������������벻һ�£��������������������</p>
+</li>
+<li><p>int pthread_rwlock_destroy(pthread_rwlock_t *rwlock);</p>
+</li>
+<li><p>int pthread_rwlock_init(pthread_rwlock_t *restrict rwlock,</p>
+<pre><code>     const pthread_rwlockattr_t *restrict attr);</code></pre>
+</li>
+<li><p>pthread_rwlock_t rwlock = PTHREAD_RWLOCK_INITIALIZER;</p>
+</li>
+<li><p>int pthread_rwlock_rdlock(pthread_rwlock_t *rwlock);</p>
+</li>
+<li><p>int pthread_rwlock_tryrdlock(pthread_rwlock_t *rwlock);</p>
+</li>
+<li><p>int pthread_rwlock_unlock(pthread_rwlock_t *rwlock); //�ͷ���</p>
+</li>
+</ul>
+<h4 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h4><ul>
+<li>����������Ҫ�ͻ�����һ��ʹ��</li>
+<li>����&amp;����<ul>
+<li>int pthread_cond_destroy(pthread_cond_t *cond);</li>
+<li>int pthread_cond_init(pthread_cond_t *restrict cond,<br>const pthread_condattr_t *restrict attr);</li>
+<li>pthread_cond_t cond = PTHREAD_COND_INITIALIZER;</li>
+</ul>
+</li>
+<li>�ȴ�<ul>
+<li>int pthread_cond_timedwait(pthread_cond_t *restrict cond,<pre><code>   pthread_mutex_t *restrict mutex,
+   const struct timespec *restrict abstime);</code></pre>
+<ul>
+<li>��ʱ�ȴ�</li>
+</ul>
+</li>
+<li>int pthread_cond_wait(pthread_cond_t *restrict cond,<pre><code>   pthread_mutex_t *restrict mutex);</code></pre>
+<ul>
+<li>�����ȴ�</li>
+<li>�ͷ�mutex������������������</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>����<ul>
+<li>int pthread_cond_signal(pthread_cond_t *cond);<ul>
+<li>��������һ�����������������ϵ��߳�</li>
+</ul>
+</li>
+<li>int pthread_cond_broadcast(pthread_cond_t *cond);<ul>
+<li>����ȫ���߳�<h4 id="�z���"><a href="#�z���" class="headerlink" title="�ź���"></a>�ź���</h4></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>һ���ź�����Ӧ����̣߳�ֻ�е��ź�����ֵΪ0��ʱ��sem_wait������</li>
+<li>int sem_init(sem_t *sem, int pshared, unsigned int value);<ul>
+<li>pshared<ul>
+<li>1 �����ź���</li>
+<li>0 �߳��ź���</li>
+</ul>
+</li>
+<li>value �ź�����ʼֵ������ռ���ź����̸߳���</li>
+</ul>
+</li>
+<li>int sem_destroy(sem_t *sem);<ul>
+<li>�����ź���</li>
+</ul>
+</li>
+<li>int sem_wait(sem_t *sem);<ul>
+<li>value–</li>
+<li>ֵΪ0�������߳�����</li>
+</ul>
+</li>
+<li>int sem_post(sem_t *sem);<ul>
+<li>�ź���value++<h2 id="��չ"><a href="#��չ" class="headerlink" title="��չ"></a><strong><em>��չ</em></strong></h2></li>
+</ul>
+</li>
+<li>������Ҳ�������ڽ���ͬ����������Ҫ��init֮ǰ�޸Ļ���������Ϊ���̼乲��<ul>
+<li>pthread_mutexattr_xxx</li>
+</ul>
+</li>
+<li>�ļ����������ƺ���<ul>
+<li>fcntl()���ı��ļ���������ʵ���ļ���</li>
+</ul>
+</li>
+<li>����������<ul>
+<li>��������</li>
+<li>������<ul>
+<li>������������һ���̰߳ѡ�1����ס��׼����”2”�ı�������һ���̰߳ѡ�2����ס��׼���á�1���ı��������֡�1����ס�ˣ���1��Ҳͬ����</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-Linux高并发网络开发" class="post-Linux高并发网络开发 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/">Linux Network</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/" data-id="ckdcx4mya0005gie5792y8iyu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <ul>
+<li><p>socket���</p>
+<ul>
+<li>�׽����ڴ�ģ��</li>
+<li>TCP<ul>
+<li>server<ul>
+<li>socket</li>
+<li>bind</li>
+<li>listen</li>
+<li>accept</li>
+<li>recv/read</li>
+<li>write/send</li>
+</ul>
+</li>
+<li>client<ul>
+<li>socket</li>
+<li>connect</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>UDP<ul>
+<li>client/server</li>
+<li>socket</li>
+<li>bind</li>
+<li>recvfrom</li>
+<li>sendto</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>���ģ��</p>
+</li>
+<li><p>Э��</p>
+<ul>
+<li>TCP��������/�Ĵλ���</li>
+</ul>
+</li>
+<li><p>����</p>
+<ul>
+<li>�����<ul>
+<li>�����̸������socket�ʹ�������</li>
+</ul>
+</li>
+<li>���߳�<ul>
+<li>���̸߳�������ʹ����߳�</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>tcp״̬ת��</p>
+<h2 id="IO��·ת��-�l���������ʵ��-sigsetadd����-sigprocmask����"><a href="#IO��·ת��-�l���������ʵ��-sigsetadd����-sigprocmask����" class="headerlink" title="IO��·ת�� �ļ���������ʵ�� sigsetadd���� sigprocmask����"></a>IO��·ת�� �ļ���������ʵ�� sigsetadd���� sigprocmask����</h2><ul>
+<li>select/poll �������Ӹ���</li>
+<li>epoll ���Ӹ���������������<ul>
+<li>ˮƽ</li>
+<li>����</li>
+<li>���ط�����</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>udp</p>
+<ul>
+<li>setsockopt ���ö˿ڸ��ã�</li>
+<li>��ر�<ul>
+<li>A close Bû��close</li>
+<li>Aֻ���գ����ܷ�</li>
+<li>shutdown() /A��B���͹ر�����A�رգ�Bû�ر�</li>
+</ul>
+</li>
+<li>dup/dup2 �����ļ�������<ul>
+<li>shutdown�����ر�����һ��������ȫ���ر�</li>
+</ul>
+</li>
+<li>netstat -apn �鿴�˿�ռ����Ϣ</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-MySQL笔记" class="post-MySQL笔记 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/">mysqlѧϰ�ʼ�</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/" data-id="ckdcx4myc0008gie5bjve6vxf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="2020-7-12"><a href="#2020-7-12" class="headerlink" title="2020 7 12"></a>2020 7 12</h1><p>mysql -u root -p liu123 //��¼</p>
+<ul>
+<li>select version(); //�鿴�汾</li>
+<li>show databases; //�鿴��</li>
+<li>creat database xx; / drop database xx;  //����ɾ����</li>
+<li>use xx; //ѡ���</li>
+<li>show tables; //�鿴��</li>
+<li>��������</li>
+</ul>
+<p><code>https://www.runoob.com/mysql/mysql-data-types.html</code></p>
+<ul>
+<li><p>����/ɾ����</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">create table if not exists mytable(</span><br><span class="line">    id int not null auto_increment,</span><br><span class="line">    name varchar(10) not null,</span><br><span class="line">    age int,</span><br><span class="line">    score int not null,</span><br><span class="line">    primary key(id)</span><br><span class="line">)engine&#x3D;innodb default charset&#x3D;utf8;</span><br><span class="line"></span><br><span class="line">drop table mytable��</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>��������</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">insert into mytable (name,age,score) values (&quot;aaa&quot;,15,85);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>��ʾȫ��</p>
+</li>
+<li><p><code>select * from mytable;</code></p>
+</li>
+</ul>
+<ul>
+<li><p>where</p>
+<ul>
+<li><p><strong><em><code>where</code></em></strong></p>
+</li>
+<li><p>select * form mytable where id &lt; 10 ;</p>
+</li>
+<li><p>select age form mytable where score &gt; 60;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x3D;��&gt;�� &lt;�� &gt;&#x3D;�� &lt;&#x3D;�� &lt;&#x3D;&gt;(��ȫ��)��!&#x3D; &#x2F; &lt;&gt;(��ȫ������)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>update</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update mytable set name&#x3D;&quot;�����˹����&quot; where name &#x3D; &quot;aaa&quot;;</span><br></pre></td></tr></table></figure></li>
+<li><p>delete</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete from mytable where name&#x3D;&quot;gouzi1&quot;;</span><br></pre></td></tr></table></figure></li>
+<li><p>LIKE</p>
+<ul>
+<li><code>select * from mytable where name like &quot;robot%&quot;;</code></li>
+</ul>
+</li>
+<li><p>union </p>
+<ul>
+<li><code>select name from mytable union select name from mytable2</code>;</li>
+<li><code>select name from mytable union all select name from mytable2;</code> //ͳ����ͬ�ֶθ��� </li>
+<li>union all��ʾ�ظ��� union����ʾ</li>
+</ul>
+</li>
+<li><p>order by asc/desc</p>
+<ul>
+<li><code>select * from mytable order by score;</code></li>
+</ul>
+</li>
+<li><p>group by</p>
+<ul>
+<li>select name from mytable group by name; //��ѯ�ֶ�Ҫ��group by����</li>
+</ul>
+</li>
+<li><p>[inner] join … on … //inner��ʡ�� ��϶��������</p>
+<ul>
+<li>select name, age, father, mony, familycount from mytable inner join mytable2 on mytable.id = mytable2.m_id;</li>
+<li>�ȼ���<ul>
+<li>select name, age, father, mony,familycount from mytable,mytable2 where mytable.id = mytable2.m_id;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>is null / is not null //�ж��ֶ��Ƿ�Ϊ��</p>
+<ul>
+<li>ifnull(������ֵ) //�滻ֵ<ul>
+<li>select ifnull(name,’xxx’) from mytable;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
+
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-mysql创建脚本" class="post-mysql创建脚本 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/">msql??</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/" data-id="ckdcx4myi000agie5hxgqey6e" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>select version();</p>
+<p>show databases;</p>
+<p>create database MYDB;<br>use MYDB;<br>create table if not exists mytable(<br>    id int not null auto_increment,<br>    name varchar(10) not null,<br>    age int,<br>    score int not null,<br>    primary key(id)<br>)engine=innodb default charset=utf8;</p>
+<p>insert into mytable (name,age,score) values (“gouzi1”,15,55);<br>insert into mytable (name,age,score) values (“���»�”,50,99);<br>insert into mytable (name,age,score) values (“��ľ��”,15,75);<br>insert into mytable (name,age,score) values (“�”,15,56);<br>insert into mytable (name,age,score) values (“����”,15,78);<br>insert into mytable (name,age,score) values (“������”,15,34);<br>insert into mytable (name,age,score) values (“����”,15,67);<br>insert into mytable (name,age,score) values (“������”,15,83);<br>insert into mytable (name,age,score) values (“��ظ”,15,86);<br>insert into mytable (name,age,score) values (“��Ħ”,15,92);<br>insert into mytable (name,age,score) values (“����”,15,97);</p>
+<p>create table if not exists mytable2(<br>    m_id int not null auto_increment,<br>    father varchar(10) not null,<br>    mony int not null,<br>    familycount int not null default 0,<br>    primary key(m_id)<br>)engine=innodb default charset=utf8;</p>
+<p>insert into mytable2 (father,mony,familycount) values (“1”,500,5);<br>insert into mytable2 (father,mony,familycount) values (“2”,5453,9);<br>insert into mytable2 (father,mony,familycount) values (“3”,35415,5);<br>insert into mytable2 (father,mony,familycount) values (“4”,13545,6);<br>insert into mytable2 (father,mony,familycount) values (“5”,16765,7);<br>insert into mytable2 (father,mony,familycount) values (“6”,13735,4);<br>insert into mytable2 (father,mony,familycount) values (“7”,1375,6);<br>insert into mytable2 (father,mony,familycount) values (“8”,38315,8);<br>insert into mytable2 (father,mony,familycount) values (“9”,13785,8);<br>insert into mytable2 (father,mony,familycount) values (“10”,1335,9);<br>insert into mytable2 (father,mony,familycount) values (“11”,1537,7);</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
 
     </footer>
 </article>
@@ -270,11 +1440,23 @@
       <ul>
         
           <li>
-            <a href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+github配置</a>
+            <a href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+gitpage配置服务器</a>
           </li>
         
           <li>
-            <a href="/2020/08/02/hello-world/">Hello World</a>
+            <a href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">代码配置</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/">配置win10共享文件 实现win-win win-linux 共享文件</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">C++扫盲</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">Linuxϵͳ���</a>
           </li>
         
       </ul>
@@ -286,7 +1468,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tags</h3>
     <div class="widget-content">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-gitblog-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">hexo gitblog 学习笔记</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/" rel="tag">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E9%A1%B9/" rel="tag">杂项</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </aside>
 
@@ -295,7 +1477,7 @@
   <aside class="widget">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget-content tagcloud">
-      <a href="/tags/hexo-gitblog-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">hexo gitblog 学习笔记</a>
+      <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E6%9D%82%E9%A1%B9/" style="font-size: 10px;">杂项</a>
     </div>
   </aside>
 

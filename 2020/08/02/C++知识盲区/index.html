@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="DSPURE的个人站，日常学习总结，实战项目分享等" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>C++扫盲 | DSPURE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="虚基类特点：基类被虚继承，无论在继承链中派生多少次，只有一个基类 虚继承 虚函数、虚析构函数指针在虚函数表中 在继承中class继承struct？或者struct继承class？合法吗？C++早期版本，不报错，但觉得不建议 template &lt; class Type &gt; 与 template &lt; struct Type &gt; 编译器报错吗？ C++3.0都不报错，不推荐 p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++扫盲">
+<meta property="og:url" content="http://dspure.github.io/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/index.html">
+<meta property="og:site_name" content="DSPURE">
+<meta property="og:description" content="虚基类特点：基类被虚继承，无论在继承链中派生多少次，只有一个基类 虚继承 虚函数、虚析构函数指针在虚函数表中 在继承中class继承struct？或者struct继承class？合法吗？C++早期版本，不报错，但觉得不建议 template &lt; class Type &gt; 与 template &lt; struct Type &gt; 编译器报错吗？ C++3.0都不报错，不推荐 p">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-02T07:42:46.000Z">
+<meta property="article:modified_time" content="2020-08-02T10:01:18.837Z">
+<meta property="article:author" content="DSPURE">
+<meta property="article:tag" content="C++">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+<meta name="generator" content="Hexo 5.0.0"></head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="DSPURE" rel="home">DSPURE</a>
+      </h1>
+      
+        <h2 class="site-description hitokoto"></h2>
+        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-C++知识盲区" class="post-C++知识盲区 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      C++扫盲
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/" data-id="ckdcx4my80003gie58co85buc" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <ol>
+<li>虚基类特点：基类被虚继承，无论在继承链中派生多少次，只有一个基类</li>
+<li>虚继承</li>
+<li>虚函数、虚析构函数指针在虚函数表中</li>
+<li>在继承中class继承struct？或者struct继承class？合法吗？C++早期版本，不报错，但觉得不建议</li>
+<li>template &lt; class Type &gt; 与 template &lt; struct Type &gt; 编译器报错吗？ C++3.0都不报错，不推荐</li>
+<li>public、protected、private数据内存分布？ 按声明顺序分布，变量顺序编译器决定</li>
+<li>将类中的很多数据传入C函数做法？ 数据封装为结构体，与类组合  子类继承结构体可行吗？ 新版编译器对继承布局做了调整，不建议</li>
+<li>各种继承都支持多态吗？</li>
+<li>访问类成员分类？ 类内部访问、子类访问、外部内访问</li>
+<li>三种属性区别？ public三种都可访问 proteated外部不允许访问 private只允许内部访问</li>
+<li>C++编程范式？ 程序、模板、面向对象</li>
+<li>多态实现原理？ 虚函数表</li>
+<li>多态发生条件？ 继承 虚函数重写 父类调用子类资源 </li>
+<li>多态发生地点？ 发生了虚函数重写，继承，父类指使用子类资源</li>
+<li>父类指针指向子类时，调用重写函数调用的是谁得函数？ 编译器识别父类指针，确定指针指向得空间大小为父类空间大小，指向了子类得父类资源，即子类得部分内存，所以调用的是父类得函数，而不是子类资源</li>
+<li>父类指针static_cast/dynamic_cast转换为子类指针,调用重写函数，调用的是谁的？利用了什么机制？这两种转换方式有什么区别？     编译器根据指针类型认为转换后得指针是子类指针，使用子类全部内存，调子类重写得函数。利用了virtual机制。static_cast编译时就转换完成，dynamic——cast执行时转换，资源消耗较静态转换大。</li>
+<li>virtual机制使用时是否发生了多态？ 没有，多态得实现使用的是虚函数表，利用了vptr指针，儿虚机制使用的是编译器根据指针类型决定内存的原理</li>
+<li>各种变量得指针大小是多少？ 指针得大小与系统有关，32为系统4byte 64为系统8byte，任何变量都是大小固定的</li>
+<li>类指针调用函数、类调用函数区别？ C++早期，指针调用使用虚函数表地址调用 类调用直接调用</li>
+<li>表现一个类需要多大内存？ 非静态data成员总和 + 不够字节的data成员剩余空间 + 为virtual机制实现负担空间</li>
+<li>多态中编译器如何知道自己需要解析的指针指向类的空间？ 根据指针类型</li>
+<li>不适用virtual机制，子类指针使用父类初始化，可直接访问父类资源吗？ 不能，只能通过虚机制访问</li>
+<li>OB OO理解？ OB object base 不使用virtual机制 OO：使用virtual机制</li>
+<li>使用. -&gt;访问成员资源消耗差异？ 访问data成员由虚基类继承差异大</li>
+<li>需要关注类型，直接继承，不关注类型，使用多态</li>
+<li>静态成员函数访问非静态成员？ 不直接支持</li>
+<li><strong><strong>静态成员函数与成员函数调用效率？为什么？ 相同 调用时编译器将静态的转换为非静态的，减小运行时间空间消耗， 非静态的成员函数会被转换为非成员函数</strong></strong></li>
+<li>函数重载、虚函数重写如何编译？ 词法语法分析，根据特征为memberfunction改独一无二的名字</li>
+<li>虚函数表基本信息？ 类型信息 虚函数指针</li>
+<li>编译器编译时如何构建虚函数表，虚函数指针个数相同吗，多重继承呢？ 给每个虚函数留一个索引，表内装地址 个数相同 多重继承的类有多个表，对应父类，虚继承来的类只有一个表 </li>
+<li>虚函数编译时确定函数，虚函数指针能否实现多态，为什么？ 能 不同编译器实现机制不同，一种机制是将指针转换为结构体指针，结构体同时保存成员函数指针和虚函数指针，编译时判断类型</li>
+<li>默认构造函数在什么时候被编译器合成？ 编译器认为在构造函数被需要的时候才会被合成</li>
+<li>如果编译器没有构造函数，则合成构造函数，如果有则扩张该函数，放入默认构造函数需要的代码</li>
+<li>编译器合成的默认构造函数只负责调用自身组合的类的默认构造函数</li>
+<li>父类和成的默认构造函数会被子类默认构造函数调用</li>
+<li>浅拷贝 深拷贝</li>
+<li>使用函数内部的对象做返回值，返回的对象会不会被销毁？返回会不会调用拷贝构造函数？ 编译器会将函数重写，将内部返回的对象作为该函数引用参数传入，所以不会被析构。像这样的改写就不会调用拷贝构造，因此拷贝构造调用编译器而定，优化的越厉害调用可能性越小</li>
+<li>拷贝传参会让编译器对函数做深奥的转化，效率明显没有引用高</li>
+<li>构造函数使用快速初始化语法 A（int x）:i(x){y = i} i = x和 y = i谁先执行？ i=x先执行</li>
+<li>空类有大小吗？ 有通常一个char大小，1 byte 为什么？ 为多个类对象定义独一无二的地址 虚继承的类的大小？非虚继承继承的呢？ 根据机器，编译器而定，为了vitual某些特殊支持</li>
+<li>空类继承大小与编译器有关，非空类基层呢？ 无关</li>
+<li>类的内存对齐？ 为每个类执行内存对齐，特别注意继承链上的也是为每个类执行内存对齐</li>
+<li>虚函数多重继承，内部vptr表？ 早期方案 1.子类多表合一，通过vptr+offset存取 2子类内存布局特点，this+offset实现</li>
+<li>指向成员函数的指针，不是用virtual 多重继承时效率与直接存取差不多</li>
+<li><strong><strong>————构造析构拷贝语义学——————-</strong></strong></li>
+<li>纯虚析构函数？是否能被调用？ 能，纯虚析构函数要有其实现体，不然在子类析构时无法调用父类析构函数，因此 需要在纯虚析构函数类外加上析构函数体 Base::~Base(){};</li>
+<li>析构函数是否能被显式调用？ 能，不建议</li>
+<li>virtual会降低执行效率，不使用多态不建议使用</li>
+<li>使用extren “C” 原因？ C++支持函数重载，C++编译器更改某些函数的名字更与C编译器不同</li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">
+    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
+        2020-08-02
+    </time>
+</a>
+    
+    
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/" rel="prev"><span class="meta-nav">←</span> 配置win10共享文件 实现win-win win-linux 共享文件</a></span>
+    
+    
+        <span class="nav-next"><a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" rel="next">Linuxϵͳ��� <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+gitpage配置服务器</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">代码配置</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/">配置win10共享文件 实现win-win win-linux 共享文件</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">C++扫盲</a>
+          </li>
+        
+          <li>
+            <a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">Linuxϵͳ���</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-content">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/" rel="tag">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E9%A1%B9/" rel="tag">杂项</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-content tagcloud">
+      <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E6%9D%82%E9%A1%B9/" style="font-size: 10px;">杂项</a>
+    </div>
+  </aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2020 DSPURE
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>

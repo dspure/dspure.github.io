@@ -3,15 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  
-  <meta name="description" content="DSPURE的个人站，日常学习总结，实战项目分享等" />
-  
 
-  
-  
-  
-  
-  
   
   <title>DSPURE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,194 +17,76 @@
 <meta property="article:author" content="DSPURE">
 <meta name="twitter:card" content="summary">
   
+    <link rel="alternate" href="/atom.xml" title="DSPURE" type="application/atom+xml">
   
-    <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-
-  
-  <!-- baidu webmaster push -->
-  <script src='//push.zhanzhang.baidu.com/push.js'></script>
 <meta name="generator" content="Hexo 5.0.0"></head>
-<body class="home blog custom-background custom-font-enabled single-author">
-  <div id="page" class="hfeed site">
-      <header id="masthead" class="site-header" role="banner">
-    <hgroup>
-      <h1 class="site-title">
-        <a href="/" title="DSPURE" rel="home">DSPURE</a>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">DSPURE</a>
       </h1>
       
-        <h2 class="site-description hitokoto"></h2>
-        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
-      
-    </hgroup>
-
-    <nav id="site-navigation" class="main-navigation" role="navigation">
-            <button class="menu-toggle">菜单</button>
-            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
-            <div class="menu-main-container">
-                <ul id="menu-main" class="nav-menu">
-                
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
-                
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
-                
-                </ul>
-            </div>
-    </nav>
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://dspure.github.io"></form>
+      </div>
+    </div>
+  </div>
 </header>
-
-      <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
+      <div class="outer">
+        <section id="main">
   
-    <article id="post-hexo-github配置" class="post-hexo-github配置 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
-        
-  
-    <h1 class="entry-title">
-      <a class="article-title" href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+gitpage配置服务器</a>
-    </h1>
-  
-
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/" data-id="ckdcwhf770000b7e58u3y4h3j" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
-      
-        <h1 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h1><h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><ul>
-<li>gitpage</li>
-</ul>
-<p>gitpage是github提供的一种利用github仓库快速搭建的博客 通过<a href="dspure@github.io">dspure@github.io</a>的方式即可访问</p>
-<ul>
-<li>hexo</li>
-</ul>
-<p>hexo是网页部署的神器，利用hexo可以快速将自己设计的网页部署到github上，而且对比gitbook使用服务器部署，hexo方便多了，而且对我这种不会前端的人来说，hexo的主题是真的不错</p>
-<ul>
-<li>简短的絮叨</li>
-</ul>
-<p>我这种前端小白，配置大半天才配好，挺不容易的，现在想想挺简单，github建个仓库配置一下，hexo配置一下就好了，哈哈哈</p>
-<h2 id="二、gitpage端"><a href="#二、gitpage端" class="headerlink" title="二、gitpage端"></a>二、gitpage端</h2><ul>
-<li><p>配置git仓库</p>
-<p>创建一个github仓库，仓库的名字dspure.github.io,<code> dspure</code>是仓库的名字</p>
-</li>
-</ul>
-<p><strong>注意: 仓库名字一定要是这种格式</strong></p>
-<ul>
-<li>配置密钥<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C <span class="string">&quot;dspure@mail.com&quot;</span></span></span><br></pre></td></tr></table></figure>
-一路回车，生成文件目录<code>~/.ssh/</code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> cat ~/.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure>
-将密钥内容部署到仓库</li>
-</ul>
-<h2 id="三、hexo端"><a href="#三、hexo端" class="headerlink" title="三、hexo端"></a>三、hexo端</h2><h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul>
-<li>npm</li>
-</ul>
-<p>安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install npm</span></span><br></pre></td></tr></table></figure>
-<p>更新到最新版</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g npm</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>nodejs10以上版本安装</li>
-</ul>
-<p>hexo对nodejs版本有要求，见<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">官方文档</a></p>
-<p>使用npm自动配置安装nodejs12<br>我的电脑用apt安装了nodejs 4.2，卸载之</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt autoremove nodojs</span></span><br></pre></td></tr></table></figure>
-<p>更新nodejs版本</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> apt-get remove nodejs   //删除nodejs  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> curl -sL https://deb.nodesource.com/setup_12.x | sudo bash - //更新nodejs源  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> apt-get update //更新包  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> apt-get install nodejs //安装nodejs  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install npm -g //更新npm</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="安装配置hexo"><a href="#安装配置hexo" class="headerlink" title="安装配置hexo"></a>安装配置hexo</h3><ul>
-<li>安装<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm -g install hexo</span></span><br></pre></td></tr></table></figure></li>
-<li>配置<ul>
-<li>创建目录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir /var/www/dspure.github.com</span></span><br></pre></td></tr></table></figure></li>
-<li>生成必要文件<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init /var/www/dspure.github.com</span></span><br></pre></td></tr></table></figure></li>
-<li>修改<code>/var/var/www/_config.yml</code><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">DSPURE</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">Life</span> <span class="string">is</span> <span class="string">worth</span> <span class="string">living</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">DSPURE的个人站，日常学习总结，实战项目分享等</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">DSPURE</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span> </span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://github.com/dspure/dspure.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h3><p>可以到<a target="_blank" rel="noopener" href="https://hexo.io/themes/">官方主题</a>看一看</p>
-<ul>
-<li>下载<br>进入 <code>dspure.github.io</code> 目录</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir themes</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git@github.com:stkevintan/hexo-theme-material-flow.git /themes/material //<span class="built_in">clone</span>主题</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>配置主题</li>
-</ul>
-<p>修改 <code>_config.yml</code> 文件</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">material</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>生成</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">- 发布</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><ul>
-<li>创建文档<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;主题名&quot;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>文档位置 <code>./source/_post/</code></p>
-<ul>
-<li>部署到github</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
-
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>总的来说还是挺简单的，期间遇到了不少问题，其中 <code>curl</code>更新git源，<code>npm</code>的使用需要加强，准备看看git大神廖雪峰的相关书籍。</p>
-
-      
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
+    <article id="post-20200723代码配置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
 </a>
     
+  </div>
+  <div class="article-inner">
     
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
-
-    </footer>
-</article>
-
-
-
-
-
-
-  
-    <article id="post-20200723代码配置" class="post-20200723代码配置 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">代码配置</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/" data-id="ckdcx4mxz0000gie53nz59o07" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <h2 id="20200723"><a href="#20200723" class="headerlink" title="20200723"></a>20200723</h2><p>NC 、 LDAP 、 邮箱 激活</p>
 <h2 id="一、工作环境配置"><a href="#一、工作环境配置" class="headerlink" title="一、工作环境配置"></a>一、工作环境配置</h2><ul>
@@ -283,48 +157,41 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 </ul>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/" data-id="ckdcy6tuj000073e5gdiq9nte" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/" rel="tag">android</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
   
-    <article id="post-20200726配置win10文件网络共享方法" class="post-20200726配置win10文件网络共享方法 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-20200726配置win10文件网络共享方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/">配置win10共享文件 实现win-win win-linux 共享文件</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/" data-id="ckdcx4my40001gie5acwfbv37" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <h1 id="配置win10共享文件-实现win-win-win-linux-共享文件"><a href="#配置win10共享文件-实现win-win-win-linux-共享文件" class="headerlink" title="配置win10共享文件 实现win-win win-linux 共享文件"></a>配置win10共享文件 实现win-win win-linux 共享文件</h1><h2 id="一、A端-win10配置"><a href="#一、A端-win10配置" class="headerlink" title="一、A端 win10配置"></a>一、A端 win10配置</h2><ol>
 <li><strong>将你要共享的文件夹共享给everyone</strong></li>
@@ -357,48 +224,41 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 <p><strong>参考</strong>：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/fe5934fdad54">https://www.jianshu.com/p/fe5934fdad54</a></p>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/20200726%E9%85%8D%E7%BD%AEwin10%E6%96%87%E4%BB%B6%E7%BD%91%E7%BB%9C%E5%85%B1%E4%BA%AB%E6%96%B9%E6%B3%95/" data-id="ckdcy6tuo000173e59agv1wix" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%9D%82%E9%A1%B9/" rel="tag">杂项</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
   
-    <article id="post-C++知识盲区" class="post-C++知识盲区 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-C++知识盲区" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">C++扫盲</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/" data-id="ckdcx4my80003gie58co85buc" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <ol>
 <li>虚基类特点：基类被虚继承，无论在继承链中派生多少次，只有一个基类</li>
@@ -453,48 +313,41 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 </ol>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/C++%E7%9F%A5%E8%AF%86%E7%9B%B2%E5%8C%BA/" data-id="ckdcy6tus000373e5bkopaqc5" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
   
-    <article id="post-Linux系统编程" class="post-Linux系统编程 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-Linux系统编程" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">Linuxϵͳ���</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" data-id="ckdcx4my90004gie5dipe2bcf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <h1 id="linuxϵͳ���"><a href="#linuxϵͳ���" class="headerlink" title="linuxϵͳ���"></a>linuxϵͳ���</h1><h2 id="����"><a href="#����" class="headerlink" title="����"></a><strong>����</strong></h2><h3 id="һ�����̿���"><a href="#һ�����̿���" class="headerlink" title="һ�����̿���"></a><strong><em>һ�����̿���</em></strong></h3><h4 id="1������"><a href="#1������" class="headerlink" title="1������"></a>1������</h4><ul>
 <li><p>���˽⣩MMU �ڴ�-&gt;Ԥ��ȡ-&gt;������-&gt;ALU�������߼���Ԫ��-��д����-&gt;�Ĵ���</p>
@@ -1042,48 +895,41 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 </ul>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/" data-id="ckdcy6tut000473e5bwz0e3ft" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
   
-    <article id="post-Linux高并发网络开发" class="post-Linux高并发网络开发 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-Linux高并发网络开发" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/">Linux Network</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/" data-id="ckdcx4mya0005gie5792y8iyu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <ul>
 <li><p>socket���</p>
@@ -1165,48 +1011,41 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 </ul>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/" data-id="ckdcy6tuu000573e558ua1kox" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
   
-    <article id="post-MySQL笔记" class="post-MySQL笔记 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-MySQL笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/">mysqlѧϰ�ʼ�</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/" data-id="ckdcx4myc0008gie5bjve6vxf" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <h1 id="2020-7-12"><a href="#2020-7-12" class="headerlink" title="2020 7 12"></a>2020 7 12</h1><p>mysql -u root -p liu123 //��¼</p>
 <ul>
@@ -1289,48 +1128,159 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 </ul>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/MySQL%E7%AC%94%E8%AE%B0/" data-id="ckdcy6tuw000873e5bek179qa" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
+  
+    <article id="post-hexo-github配置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+gitpage配置服务器</a>
+    </h1>
+  
 
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h1><h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><ul>
+<li>gitpage</li>
+</ul>
+<p>gitpage是github提供的一种利用github仓库快速搭建的博客 通过<a href="dspure@github.io">dspure@github.io</a>的方式即可访问</p>
+<ul>
+<li>hexo</li>
+</ul>
+<p>hexo是网页部署的神器，利用hexo可以快速将自己设计的网页部署到github上，而且对比gitbook使用服务器部署，hexo方便多了，而且对我这种不会前端的人来说，hexo的主题是真的不错</p>
+<ul>
+<li>简短的絮叨</li>
+</ul>
+<p>我这种前端小白，配置大半天才配好，挺不容易的，现在想想挺简单，github建个仓库配置一下，hexo配置一下就好了，哈哈哈</p>
+<h2 id="二、gitpage端"><a href="#二、gitpage端" class="headerlink" title="二、gitpage端"></a>二、gitpage端</h2><ul>
+<li><p>配置git仓库</p>
+<p>创建一个github仓库，仓库的名字dspure.github.io,<code> dspure</code>是仓库的名字</p>
+</li>
+</ul>
+<p><strong>注意: 仓库名字一定要是这种格式</strong></p>
+<ul>
+<li>配置密钥<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C <span class="string">&quot;dspure@mail.com&quot;</span></span></span><br></pre></td></tr></table></figure>
+一路回车，生成文件目录<code>~/.ssh/</code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> cat ~/.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure>
+将密钥内容部署到仓库</li>
+</ul>
+<h2 id="三、hexo端"><a href="#三、hexo端" class="headerlink" title="三、hexo端"></a>三、hexo端</h2><h3 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h3><ul>
+<li>npm</li>
+</ul>
+<p>安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install npm</span></span><br></pre></td></tr></table></figure>
+<p>更新到最新版</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g npm</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>nodejs10以上版本安装</li>
+</ul>
+<p>hexo对nodejs版本有要求，见<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">官方文档</a></p>
+<p>使用npm自动配置安装nodejs12<br>我的电脑用apt安装了nodejs 4.2，卸载之</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt autoremove nodojs</span></span><br></pre></td></tr></table></figure>
+<p>更新nodejs版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> apt-get remove nodejs   //删除nodejs  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> curl -sL https://deb.nodesource.com/setup_12.x | sudo bash - //更新nodejs源  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> apt-get update //更新包  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> apt-get install nodejs //安装nodejs  </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install npm -g //更新npm</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="安装配置hexo"><a href="#安装配置hexo" class="headerlink" title="安装配置hexo"></a>安装配置hexo</h3><ul>
+<li>安装<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm -g install hexo</span></span><br></pre></td></tr></table></figure></li>
+<li>配置<ul>
+<li>创建目录<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir /var/www/dspure.github.com</span></span><br></pre></td></tr></table></figure></li>
+<li>生成必要文件<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init /var/www/dspure.github.com</span></span><br></pre></td></tr></table></figure></li>
+<li>修改<code>/var/var/www/_config.yml</code><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">DSPURE</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">Life</span> <span class="string">is</span> <span class="string">worth</span> <span class="string">living</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">DSPURE的个人站，日常学习总结，实战项目分享等</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">DSPURE</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span> </span><br><span class="line">    <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repo:</span> <span class="string">https://github.com/dspure/dspure.github.io</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h3><p>可以到<a target="_blank" rel="noopener" href="https://hexo.io/themes/">官方主题</a>看一看</p>
+<ul>
+<li>下载<br>进入 <code>dspure.github.io</code> 目录</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir themes</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> git@github.com:stkevintan/hexo-theme-material-flow.git /themes/material //<span class="built_in">clone</span>主题</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置主题</li>
+</ul>
+<p>修改 <code>_config.yml</code> 文件</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">material</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">- 发布</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><ul>
+<li>创建文档<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;主题名&quot;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p>文档位置 <code>./source/_post/</code></p>
+<ul>
+<li>部署到github</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>总的来说还是挺简单的，期间遇到了不少问题，其中 <code>curl</code>更新git源，<code>npm</code>的使用需要加强，准备看看git大神廖雪峰的相关书籍。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/" data-id="ckdcy6tuz000b73e5dvpibxg7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
 
 
   
-    <article id="post-mysql创建脚本" class="post-mysql创建脚本 post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-mysql创建脚本" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/" class="article-date">
+  <time datetime="2020-08-02T07:42:46.000Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/">msql??</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/" data-id="ckdcx4myi000agie5hxgqey6e" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p>select version();</p>
 <p>show databases;</p>
@@ -1340,48 +1290,41 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 <p>insert into mytable2 (father,mony,familycount) values (“1”,500,5);<br>insert into mytable2 (father,mony,familycount) values (“2”,5453,9);<br>insert into mytable2 (father,mony,familycount) values (“3”,35415,5);<br>insert into mytable2 (father,mony,familycount) values (“4”,13545,6);<br>insert into mytable2 (father,mony,familycount) values (“5”,16765,7);<br>insert into mytable2 (father,mony,familycount) values (“6”,13735,4);<br>insert into mytable2 (father,mony,familycount) values (“7”,1375,6);<br>insert into mytable2 (father,mony,familycount) values (“8”,38315,8);<br>insert into mytable2 (father,mony,familycount) values (“9”,13785,8);<br>insert into mytable2 (father,mony,familycount) values (“10”,1335,9);<br>insert into mytable2 (father,mony,familycount) values (“11”,1537,7);</p>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/">
-    <time datetime="2020-08-02T07:42:46.000Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
-  <span class="article-delim">&#8226;</span>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/mysql%E5%88%9B%E5%BB%BA%E8%84%9A%E6%9C%AC/" data-id="ckdcy6tv0000d73e526j459ep" class="article-share-link">Share</a>
+      
+      
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li></ul>
 
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
   
-    <article id="post-hello-world" class="post-hello-world post type-post status-publish format-standard hentry">
-    <!---->
-
-      <header class="entry-header">
-        
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/02/hello-world/" class="article-date">
+  <time datetime="2020-08-02T05:23:55.886Z" itemprop="datePublished">2020-08-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
         
   
-    <h1 class="entry-title">
+    <h1 itemprop="name">
       <a class="article-title" href="/2020/08/02/hello-world/">Hello World</a>
     </h1>
   
 
-        
-        <div class="comments-link">
-            
-            <a href="javascript:void(0);" data-url="http://dspure.github.io/2020/08/02/hello-world/" data-id="ckdcqlbj60000ree54avte4xi" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
-        </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
-
-    <div class="entry-content">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -1398,50 +1341,61 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
-    </div><!-- .entry-content -->
-
-    <footer class="entry-meta">
-    <a href="/2020/08/02/hello-world/">
-    <time datetime="2020-08-02T05:23:55.886Z" class="entry-date">
-        2020-08-02
-    </time>
-</a>
-    
-    
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://dspure.github.io/2020/08/02/hello-world/" data-id="ckdcy6tux000973e56u44e2pq" class="article-share-link">Share</a>
+      
+      
     </footer>
+  </div>
+  
 </article>
 
 
-
-
-
-
-  
   
 
-</div></div>
-        <div id="secondary" class="widget-area" role="complementary">
-  
-    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
-    <div>
-        <input type="text" value="" name="s" id="s" />
-        <input type="submit" id="searchsubmit" value="搜索" />
-    </div>
-</form></aside>
-  
-    
-  
-    
-  
-    
-  <aside class="widget">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget-content">
-      <ul>
+
+</section>
         
-          <li>
-            <a href="/2020/08/02/hexo-github%E9%85%8D%E7%BD%AE/">hexo+gitpage配置服务器</a>
-          </li>
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/" rel="tag">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E9%A1%B9/" rel="tag">杂项</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E6%9D%82%E9%A1%B9/" style="font-size: 10px;">杂项</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
         
           <li>
             <a href="/2020/08/02/20200723%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/">代码配置</a>
@@ -1459,39 +1413,38 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
             <a href="/2020/08/02/Linux%E7%B3%BB%E7%BB%9F%E7%BC%96%E7%A8%8B/">Linuxϵͳ���</a>
           </li>
         
+          <li>
+            <a href="/2020/08/02/Linux%E9%AB%98%E5%B9%B6%E5%8F%91%E7%BD%91%E7%BB%9C%E5%BC%80%E5%8F%91/">Linux Network</a>
+          </li>
+        
       </ul>
     </div>
-  </aside>
+  </div>
 
   
-    
-  <aside class="widget">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget-content">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/" rel="tag">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9D%82%E9%A1%B9/" rel="tag">杂项</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </aside>
-
-  
-    
-  <aside class="widget">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget-content tagcloud">
-      <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/mysql/" style="font-size: 15px;">mysql</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E6%9D%82%E9%A1%B9/" style="font-size: 10px;">杂项</a>
-    </div>
-  </aside>
-
-  
-</div>
+</aside>
+        
       </div>
-      <footer id="colophon" role="contentinfo">
-    <p>&copy; 2020 DSPURE
-    All rights reserved.</p>
-    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 DSPURE<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
 </footer>
-    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
 
-<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
   
@@ -1506,9 +1459,7 @@ BP代码有AP的编译脚本，文件夹放在build_script下，文件夹为Dail
 <script src="/js/script.js"></script>
 
 
-<script src="/js/navigation.js"></script>
 
-<div id="bg"></div>
 
   </div>
 </body>
